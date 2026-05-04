@@ -50,3 +50,20 @@ main {
 .completed {
   background: lightgreen;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
