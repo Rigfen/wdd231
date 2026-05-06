@@ -1,5 +1,5 @@
-document.getElementById("currentyear").textContent =
-  new Date().getFullYear();
+const year = document.getElementById("currentyear");
+const lastModified = document.getElementById("lastModified");
 
-document.getElementById("lastModified").textContent =
-  "Last Modified: " + document.lastModified;
+year.textContent = new Date().getFullYear();
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
