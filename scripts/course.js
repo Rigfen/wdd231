@@ -1,7 +1,7 @@
 const courses = [
   { code: "WDD 130", credits: 2, completed: true, subject: "WDD" },
-  { code: "WDD 131", credits: 2, completed: false, subject: "WDD" },
-  { code: "WDD 231", credits: 2, completed: true, subject: "WDD" },
+  { code: "WDD 131", credits: 2, completed: true, subject: "WDD" },
+  { code: "WDD 231", credits: 2, completed: false, subject: "WDD" },
 ];
 
 const courseContainer = document.getElementById("courses");
