@@ -42,14 +42,34 @@
 <main>
   <h1>Home</h1>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a student learning web development and building projects. I have 4 Kids and wonderful wife what loves and supports me. We live in england currently for my job. I am from Colorado in the United States.</p>
-    <img src="images/profile.jpg" alt="Profile picture of Jared Larsen" width="200">
-  </section>
+  <div class="top-grid">
 
-  <section>
-    <h2>Courses</h2>
+    <section class="card">
+      <h2>About Me</h2>
+
+      <p>
+        I am a student learning web development and building projects.
+        I have 4 kids and a wonderful wife who loves and supports me.
+        We currently live in England for my job. I am originally from
+        Colorado in the United States.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Student Photo</h2>
+
+      <img
+        src="images/profile.jpg"
+        alt="Profile picture of Jared Larsen"
+        width="200"
+        loading="lazy"
+      >
+    </section>
+
+  </div>
+
+  <section class="card">
+    <h2>Web Certificate Courses</h2>
 
     <div class="buttons">
       <button id="all">All</button>
@@ -58,13 +78,21 @@
     </div>
 
     <div id="courses"></div>
+
     <p id="credits"></p>
   </section>
 
-  <section>
+  <section class="card">
     <h2>Location</h2>
+
     <p>United Kingdom</p>
-    <img src="images/download.jpg" alt="Map of the United Kingdom" width="100">
+
+    <img
+      src="images/download.jpg"
+      alt="Map of the United Kingdom"
+      width="100"
+      loading="lazy"
+    >
   </section>
 </main>
 

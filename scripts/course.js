@@ -1,8 +1,7 @@
 const courses = [
   { code: "WDD 130", credits: 2, completed: true, subject: "WDD" },
-  { code: "WDD 231", credits: 3, completed: false, subject: "WDD" },
-  { code: "CSE 111", credits: 2, completed: true, subject: "CSE" },
-  { code: "CSE 210", credits: 3, completed: false, subject: "CSE" }
+  { code: "WDD 131", credits: 2, completed: false, subject: "WDD" },
+  { code: "WDD 231", credits: 2, completed: true, subject: "WDD" },
 ];
 
 const courseContainer = document.getElementById("courses");
@@ -24,12 +23,12 @@ function displayCourses(courseList) {
     courseContainer.appendChild(div);
   });
 
-  // CALCULATE CREDITS (reduce requirement)
+ 
   const total = courseList.reduce((sum, course) => sum + course.credits, 0);
   creditsDisplay.textContent = `Total Credits: ${total}`;
 }
 
-// FILTER BUTTONS
+
 document.getElementById("all").addEventListener("click", () => {
   displayCourses(courses);
 });
@@ -42,5 +41,5 @@ document.getElementById("cse").addEventListener("click", () => {
   displayCourses(courses.filter(course => course.subject === "CSE"));
 });
 
-// INITIAL LOAD
+
 displayCourses(courses);
