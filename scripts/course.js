@@ -38,7 +38,7 @@ document.getElementById("wdd").addEventListener("click", () => {
 });
 
 document.getElementById("cse").addEventListener("click", () => {
-  displayCourses(courses.filter(course => course.subject === "WDD"));
+  displayCourses(courses.filter(course => course.subject === "CSE"));
 });
 
 
