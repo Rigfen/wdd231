@@ -116,3 +116,15 @@ section img {
 footer {
   text-align: center;
 }
+
+.course {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+}
+
+.completed {
+  background: #b9f6ca;
+}
