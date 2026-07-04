@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     #menu {
         display: none;
@@ -6,40 +6,27 @@
 
     .navigation {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
         gap: 1rem;
     }
 
     .navigation li {
-        list-style: none;
+        margin: 0;
     }
 
     .top-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1.5rem;
-        margin-bottom: 2rem;
         align-items: start;
+        margin-bottom: 1.5rem;
     }
 
     .buttons {
-        display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-bottom: 1rem;
     }
 
     #courses {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .course {
-        margin: 0;
     }
 
     footer {
@@ -47,7 +34,7 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        padding: 1rem 2rem;
+        gap: 1rem;
     }
 
     footer > * {
