@@ -1,35 +1,56 @@
 @media (min-width: 768px) {
 
-  #menu {
-    display: none;
-  }
+    #menu {
+        display: none;
+    }
 
-  .navigation {
-    display: flex;
-    gap: 1rem;
-  }
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    }
 
-  .top-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
+    .navigation li {
+        list-style: none;
+    }
 
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
+    .top-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        align-items: start;
+    }
 
-  #courses {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 1rem;
-  }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
 
-  footer {
-    text-align: center;
-  }
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .course {
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    footer > * {
+        flex: 1;
+    }
 }
