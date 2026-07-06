@@ -1,11 +1,43 @@
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-}
+@media screen and (min-width: 768px) {
 
-footer > * {
-    flex: 1;
- }
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    .top-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+        margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    #courses {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    footer > * {
+        flex: 1;
+    }
+}
