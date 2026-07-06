@@ -1,0 +1,11 @@
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    footer > * {
+        flex: 1;
+    }
