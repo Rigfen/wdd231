@@ -1,43 +1,75 @@
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo-container {
+        justify-self: start;
+    }
 
     #menu {
         display: none;
     }
 
+    nav {
+        justify-self: end;
+    }
+
     .navigation {
         display: flex;
-        gap: 1rem;
+        gap: .5rem;
     }
 
     .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: .75rem 1rem;
+        border-radius: 8px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .list section {
+        grid-template-columns:
+            2fr
+            2fr
+            1.5fr
+            2fr
+            1fr;
+
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .list h3 {
         margin: 0;
     }
 
-    .top-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 1.5rem;
-        align-items: start;
-        margin-bottom: 1.5rem;
+    .list p {
+        margin: 0;
     }
 
-    .buttons {
-        justify-content: center;
-    }
-
-    #courses {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
 
     footer {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
         text-align: center;
         gap: 1rem;
     }
 
-    footer > * {
-        flex: 1;
-    }
 }

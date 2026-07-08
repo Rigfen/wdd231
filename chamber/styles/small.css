@@ -1,47 +1,100 @@
-body {
-    margin: 0;
-    font-family: "Roboto Slab", serif;
-    line-height: 1.6;
+/* -------------------- */
+/* CSS Variables */
+/* -------------------- */
+
+:root {
+    --primary: #12355B;
+    --secondary: #F4A261;
+    --background: #ffffff;
+    --surface: #f5f5f5;
+    --text: #333333;
+    --border: #d9d9d9;
+
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+
+    --shadow: 0 3px 8px rgba(0,0,0,.15);
+    --radius: 10px;
 }
 
-header,
-footer {
-    background-color: #1e3a5f;
+/* -------------------- */
+/* Base */
+/* -------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text);
+    background: var(--background);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- */
+/* Header */
+/* -------------------- */
+
+header {
+    background: var(--primary);
     color: white;
     padding: 1rem;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
+.logo-container {
     display: flex;
     align-items: center;
-    gap: .75rem;
+    gap: 1rem;
 }
 
-.logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo-container p {
+    margin: .25rem 0 0;
 }
+
+/* -------------------- */
+/* Navigation */
+/* -------------------- */
 
 #menu {
-    font-size: 2rem;
+    margin-top: 1rem;
     background: none;
     border: none;
     color: white;
+    font-size: 2rem;
     cursor: pointer;
 }
 
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
 .navigation {
-    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none;
 }
 
 .navigation.open {
@@ -49,115 +102,137 @@ header {
 }
 
 .navigation li {
-    margin: .25rem 0;
+    border-top: 1px solid rgba(255,255,255,.25);
 }
 
 .navigation a {
     display: block;
-    padding: .75rem 1rem;
+    padding: 1rem;
     color: white;
-    text-decoration: none;
-    transition: background-color .3s;
+    transition: background .3s;
 }
 
 .navigation a:hover {
-    background-color: #365b87;
+    background: rgba(255,255,255,.2);
 }
 
-.navigation a.active {
-    background-color: white;
-    color: #1e3a5f;
+.navigation .active {
+    background: var(--secondary);
+    color: black;
     font-weight: bold;
 }
 
+/* -------------------- */
+/* Main */
+/* -------------------- */
+
 main {
-    max-width: 1100px;
-    margin: 0 auto;
     padding: 1rem;
 }
 
-.card {
-    background: #f5f5f5;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-.card h2 {
-    margin: 0;
-    padding: .75rem;
+main h2 {
     text-align: center;
-    background: #1e1e1e;
-    color: white;
+    margin-bottom: 1.5rem;
 }
 
-.card p {
-    padding: 1rem;
-}
+/* -------------------- */
+/* View Buttons */
+/* -------------------- */
 
-.card img {
-    display: block;
-    margin: 1rem auto;
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-}
-
-.buttons {
+.menu {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: .75rem;
-    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-.buttons button {
-    padding: .75rem 1.5rem;
+.menu button {
+    background: var(--secondary);
     border: none;
-    border-radius: 6px;
+    padding: .75rem 1.5rem;
+    border-radius: var(--radius);
     cursor: pointer;
-    transition: background-color .3s, color .3s;
+    font-weight: bold;
+    transition: .3s;
 }
 
-.buttons button:hover {
-    background-color: #1e3a5f;
-    color: white;
+.menu button:hover {
+    transform: scale(1.05);
 }
 
-#courses {
+/* -------------------- */
+/* Member Cards */
+/* -------------------- */
+
+.grid {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.course {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background: white;
+.grid section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     padding: 1rem;
     text-align: center;
+    box-shadow: var(--shadow);
 }
 
-.completed {
-    background: #b9f6ca;
+.grid img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 1rem;
 }
 
-.social {
+.grid h3 {
+    color: var(--primary);
+}
+
+.grid p {
+    margin: .5rem 0;
+}
+
+.grid a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* -------------------- */
+/* List View */
+/* -------------------- */
+
+.list {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
 }
 
-.social img {
-    width: 30px;
-    height: 30px;
-    transition: transform .3s;
+.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
 }
 
-.social img:hover {
-    transform: scale(1.15);
+.list section img {
+    display: none;
 }
+
+.list section:nth-child(even) {
+    background: #eeeeee;
+}
+
+/* -------------------- */
+/* Footer */
+/* -------------------- */
 
 footer {
+    background: var(--primary);
+    color: white;
     text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: .5rem 0;
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Lincoln Bakery",
+    "address": "15 High Street, Lincoln, LN1 1AA",
+    "phone": "+44 1522 555101",
+    "website": "https://www.lincolnbakery.co.uk",
+    "image": "lincoln-bakery.webp",
+    "membership": 3,
+    "description": "Fresh artisan breads, pastries, and cakes made daily."
+  },
+  {
+    "name": "Harbour Engineering",
+    "address": "22 Dock Road, Grimsby, DN31 3AA",
+    "phone": "+44 1472 555102",
+    "website": "https://www.harbourengineering.co.uk",
+    "image": "harbour-engineering.webp",
+    "membership": 2,
+    "description": "Industrial engineering and marine repair services."
+  },
+  {
+    "name": "Green Fields Market",
+    "address": "8 Market Square, Boston, PE21 6EH",
+    "phone": "+44 1205 555103",
+    "website": "https://www.greenfieldsmarket.co.uk",
+    "image": "green-fields.webp",
+    "membership": 1,
+    "description": "Locally sourced produce and artisan products."
+  },
+  {
+    "name": "Elite Fitness Centre",
+    "address": "10 Wellness Way, Lincoln, LN6 7TS",
+    "phone": "+44 1522 555104",
+    "website": "https://www.elitefitnesscentre.co.uk",
+    "image": "elite-fitness.webp",
+    "membership": 2,
+    "description": "Modern gym with personal training and group classes."
+  },
+  {
+    "name": "Lincoln Tech Solutions",
+    "address": "42 Innovation Park, Lincoln, LN5 9XY",
+    "phone": "+44 1522 555105",
+    "website": "https://www.lincolntechsolutions.co.uk",
+    "image": "tech-solutions.webp",
+    "membership": 3,
+    "description": "IT support, cybersecurity, and business software."
+  },
+  {
+    "name": "Coastal Construction",
+    "address": "5 Marina Drive, Skegness, PE25 2UB",
+    "phone": "+44 1754 555106",
+    "website": "https://www.coastalconstruction.co.uk",
+    "image": "coastal-construction.webp",
+    "membership": 2,
+    "description": "Residential and commercial construction services."
+  },
+  {
+    "name": "Heritage Legal Group",
+    "address": "18 Cathedral Street, Lincoln, LN2 1PX",
+    "phone": "+44 1522 555107",
+    "website": "https://www.heritagelegal.co.uk",
+    "image": "heritage-legal.webp",
+    "membership": 1,
+    "description": "Legal advice for individuals and businesses."
+  },
+  {
+    "name": "Lincoln Coffee House",
+    "address": "2 Castle Hill, Lincoln, LN1 3AA",
+    "phone": "+44 1522 555108",
+    "website": "https://www.lincolncoffeehouse.co.uk",
+    "image": "coffee-house.webp",
+    "membership": 3,
+    "description": "Specialty coffee, homemade food, and free Wi-Fi."
+  }
+]
