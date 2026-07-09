@@ -40,7 +40,7 @@ function displayMembers(members) {
 
         name.textContent = member.name;
 
-        image.setAttribute("src", `images/members/${member.image}`);
+        image.setAttribute("src", `images/${member.images}`);
         image.setAttribute("alt", `${member.name} Logo`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "200");
