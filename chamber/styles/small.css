@@ -236,3 +236,13 @@ footer {
 footer p {
     margin: .5rem 0;
 }
+
+#members {
+    min-height: 900px;
+}
+
+.grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
