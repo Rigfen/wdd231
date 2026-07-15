@@ -13,7 +13,7 @@
     "address": "22 Dock Road, Grimsby, DN31 3AA",
     "phone": "+44 1472 555102",
     "website": "https://www.harbourengineering.co.uk",
-    "images": "harbour-engineering.webp",
+    "images": "harbour-engineering.jpg",
     "membership": 2,
     "description": "Industrial engineering and marine repair services."
   },
@@ -22,7 +22,7 @@
     "address": "8 Market Square, Boston, PE21 6EH",
     "phone": "+44 1205 555103",
     "website": "https://www.greenfieldsmarket.co.uk",
-    "images": "green-fields.webp",
+    "images": "green-fields.jpg",
     "membership": 1,
     "description": "Locally sourced produce and artisan products."
   },
@@ -31,7 +31,7 @@
     "address": "10 Wellness Way, Lincoln, LN6 7TS",
     "phone": "+44 1522 555104",
     "website": "https://www.elitefitnesscentre.co.uk",
-    "images": "elite-fitness.webp",
+    "images": "elite-fitness.jpg",
     "membership": 2,
     "description": "Modern gym with personal training and group classes."
   },
@@ -40,7 +40,7 @@
     "address": "42 Innovation Park, Lincoln, LN5 9XY",
     "phone": "+44 1522 555105",
     "website": "https://www.lincolntechsolutions.co.uk",
-    "images": "tech-solutions.webp",
+    "images": "tech-solutions.jpg",
     "membership": 3,
     "description": "IT support, cybersecurity, and business software."
   },
@@ -49,7 +49,7 @@
     "address": "5 Marina Drive, Skegness, PE25 2UB",
     "phone": "+44 1754 555106",
     "website": "https://www.coastalconstruction.co.uk",
-    "images": "coastal-construction.webp",
+    "images": "c.jpg",
     "membership": 2,
     "description": "Residential and commercial construction services."
   },
@@ -58,7 +58,7 @@
     "address": "18 Cathedral Street, Lincoln, LN2 1PX",
     "phone": "+44 1522 555107",
     "website": "https://www.heritagelegal.co.uk",
-    "images": "heritage-legal.webp",
+    "images": "law.png",
     "membership": 1,
     "description": "Legal advice for individuals and businesses."
   },
@@ -67,7 +67,7 @@
     "address": "2 Castle Hill, Lincoln, LN1 3AA",
     "phone": "+44 1522 555108",
     "website": "https://www.lincolncoffeehouse.co.uk",
-    "images": "coffee-house.webp",
+    "images": "coffee-house.jpg",
     "membership": 3,
     "description": "Specialty coffee, homemade food, and free Wi-Fi."
   }
