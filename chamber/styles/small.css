@@ -17,10 +17,6 @@
     --radius: 10px;
 }
 
-/* -------------------- */
-/* Base */
-/* -------------------- */
-
 * {
     box-sizing: border-box;
 }
@@ -49,9 +45,7 @@ a {
     color: inherit;
 }
 
-/* -------------------- */
 /* Header */
-/* -------------------- */
 
 header {
     background: var(--primary);
@@ -69,9 +63,7 @@ header {
     margin: .25rem 0 0;
 }
 
-/* -------------------- */
 /* Navigation */
-/* -------------------- */
 
 #menu {
     margin-top: 1rem;
@@ -122,22 +114,77 @@ header {
     font-weight: bold;
 }
 
-/* -------------------- */
 /* Main */
-/* -------------------- */
 
 main {
     padding: 1rem;
 }
 
+main h1,
 main h2 {
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-/* -------------------- */
+/* Hero */
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero picture {
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--secondary);
+    color: black;
+    padding: .8rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: bold;
+    box-shadow: var(--shadow);
+}
+
+.cta-button:hover {
+    background: #e89050;
+}
+
+/* Home Grid */
+
+.home-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.events,
+.weather,
+.spotlights {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
 /* View Buttons */
-/* -------------------- */
 
 .menu {
     display: flex;
@@ -160,9 +207,7 @@ main h2 {
     transform: scale(1.05);
 }
 
-/* -------------------- */
 /* Member Cards */
-/* -------------------- */
 
 .grid {
     display: grid;
@@ -178,9 +223,10 @@ main h2 {
     box-shadow: var(--shadow);
 }
 
-.grid img {
-    width: 120px;
-    height: auto;
+.grid section img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
     margin: 0 auto 1rem;
 }
 
@@ -197,9 +243,7 @@ main h2 {
     font-weight: bold;
 }
 
-/* -------------------- */
 /* List View */
-/* -------------------- */
 
 .list {
     display: flex;
@@ -221,9 +265,7 @@ main h2 {
     background: #eeeeee;
 }
 
-/* -------------------- */
 /* Footer */
-/* -------------------- */
 
 footer {
     background: var(--primary);
@@ -233,16 +275,13 @@ footer {
     margin-top: 3rem;
 }
 
-footer p {
+footer p,
+footer div {
     margin: .5rem 0;
 }
 
+/* Misc */
+
 #members {
     min-height: 900px;
-}
-
-.grid img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
 }
