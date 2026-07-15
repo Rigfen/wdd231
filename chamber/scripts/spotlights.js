@@ -46,7 +46,7 @@ function displaySpotlights(members) {
         }
 
         card.innerHTML = `
-            <img src="images/${member.image}"
+            <img src="images/${member.images}"
                  alt="${member.name} Logo"
                  width="150"
                  height="150"
