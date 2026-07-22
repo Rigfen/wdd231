@@ -65,11 +65,25 @@
 
 
     footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: left;
+}
 
+}
+
+/* -------------------- */
+/* Join Page Desktop */
+/* -------------------- */
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.membership-cards {
+    position: sticky;
+    top: 1rem;
 }
