@@ -1,6 +1,5 @@
 @media only screen and (min-width: 768px) {
 
-
     header {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -44,46 +43,36 @@
     }
 
     .list section {
-        grid-template-columns:
-            2fr
-            2fr
-            1.5fr
-            2fr
-            1fr;
-
+        grid-template-columns: 2fr 2fr 1.5fr 2fr 1fr;
         align-items: center;
         gap: 1rem;
     }
 
-    .list h3 {
-        margin: 0;
-    }
-
+    .list h3,
     .list p {
         margin: 0;
     }
 
-
     footer {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    text-align: left;
-}
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: left;
+    }
 
-}
+    /* -------------------- */
+    /* Join Page Desktop */
+    /* -------------------- */
 
-/* -------------------- */
-/* Join Page Desktop */
-/* -------------------- */
+    .join-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
 
-.join-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
+    .membership-cards {
+        position: sticky;
+        top: 1rem;
+    }
 
-.membership-cards {
-    position: sticky;
-    top: 1rem;
 }
