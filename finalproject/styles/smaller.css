@@ -1,0 +1,206 @@
+/* ========================================
+   VARIABLES
+======================================== */
+
+:root {
+
+    --primary: #2E7D32;
+    --primary-dark: #1B5E20;
+    --secondary: #81C784;
+    --accent: #FFC107;
+
+    --background: #F5F9F3;
+    --surface: #FFFFFF;
+
+    --text: #2C3E2F;
+    --light-text: #6B7B6A;
+
+    --border: #DDE8D8;
+
+    --radius: 14px;
+
+    --shadow: 0 8px 24px rgba(0,0,0,.10);
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+
+}
+
+/* ========================================
+   RESET
+======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family: var(--body-font);
+
+    line-height: 1.6;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1,
+h2,
+h3 {
+
+    font-family: var(--heading-font);
+
+    color: var(--primary-dark);
+
+}
+
+h1 {
+
+    font-size: 2rem;
+
+}
+
+h2 {
+
+    margin-bottom: 1rem;
+
+}
+
+main {
+
+    padding: 1rem;
+
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+
+    background: linear-gradient(135deg,
+    var(--primary),
+    var(--primary-dark));
+
+    color: white;
+
+    padding: 1.5rem 1rem;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+header h1 {
+
+    color: white;
+
+    margin-bottom: 1rem;
+
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .75rem;
+
+}
+
+nav a {
+
+    display: block;
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+
+    padding: .85rem;
+
+    border-radius: var(--radius);
+
+    transition: .3s;
+
+}
+
+nav a:hover {
+
+    background: rgba(255,255,255,.3);
+
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+section {
+
+    background: var(--surface);
+
+    padding: 1.5rem;
+
+    margin: 1.5rem 0;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+section ul {
+
+    padding-left: 1rem;
+
+    list-style: disc;
+
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    background: var(--primary-dark);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+
+    margin-top: 3rem;
+
+}
