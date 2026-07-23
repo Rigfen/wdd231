@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Green Thumbs | Professional Lawn Care Services</title>
+    <title>Green Thumb | Professional Lawn Care</title>
 
     <meta name="description"
-        content="Green Thumb provides professional lawn care, landscaping, mowing, fertilization, and seasonal yard maintenance to keep your lawn healthy and beautiful.">
+        content="Professional lawn care, mowing, landscaping, fertilization, edging, and seasonal yard maintenance by Green Thumb.">
 
     <meta name="author" content="Jared Larsen">
 
-    <!-- Favicon -->
     <link rel="icon" href="images/littlelawn.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+
 </head>
 
 <body>
@@ -40,19 +42,31 @@
             height="60">
 
         <div>
+
             <h1>Green Thumb</h1>
+
             <p>Professional Lawn Care</p>
+
         </div>
 
     </div>
 
+    <button id="menu" aria-label="Open Navigation"></button>
+
     <nav>
-        <ul>
+
+        <ul class="navigation">
+
             <li><a class="active" href="index.html">Home</a></li>
+
             <li><a href="about.html">About</a></li>
+
             <li><a href="services.html">Services</a></li>
+
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
+
     </nav>
 
 </header>
@@ -63,97 +77,141 @@
 
     <section class="hero">
 
-        <!-- Replace hero.webp with your own lawn image -->
-        <img
-            src="images/hero.webp"
-            alt="Beautiful striped green lawn in front of a professionally landscaped home">
+        <img src="images/heros.webp"
+            alt="Beautiful striped lawn">
 
         <div class="hero-content">
 
             <h2>Creating Beautiful Lawns You'll Love</h2>
 
             <p>
-                Professional mowing, landscaping, fertilization, edging,
-                seasonal cleanups, and dependable lawn care for homes
-                and businesses.
+
+                Professional mowing, landscaping, edging,
+                fertilization, seasonal cleanups, and dependable
+                lawn care for your home or business.
+
             </p>
 
-            <a class="hero-button" href="contact.html">
+            <a href="contact.html" class="hero-button">
+
                 Request a Free Estimate
+
             </a>
 
         </div>
 
     </section>
 
-    <!-- WHY CHOOSE US -->
+    <!-- WELCOME -->
 
-    <section class="features">
+    <section class="split">
 
-        <article>
+        <div class="split-text">
 
-            <h3>Reliable Service</h3>
-
-            <p>
-                We arrive on schedule and treat every property with
-                professionalism and care.
-            </p>
-
-        </article>
-
-        <article>
-
-            <h3>Quality Lawn Care</h3>
+            <h2>Welcome to Green Thumb</h2>
 
             <p>
-                From mowing and edging to fertilization and seasonal
-                maintenance, we help keep your lawn looking its best.
+
+                Green Thumb is committed to helping homeowners
+                and businesses enjoy healthy, beautiful lawns
+                through dependable lawn care and landscaping
+                services.
+
             </p>
-
-        </article>
-
-        <article>
-
-            <h3>Customer Focused</h3>
 
             <p>
-                Every lawn is different. We work with you to provide
-                services that fit your property and your budget.
+
+                Whether you need routine mowing or complete
+                property maintenance, we have the experience
+                to keep your yard looking its best.
+
             </p>
 
-        </article>
+        </div>
+
+        <div class="split-image">
+
+            <img src="images/lawn.jpg"
+                alt="Beautiful landscaped yard">
+
+        </div>
 
     </section>
 
-    <!-- ABOUT -->
+    <!-- RELIABLE -->
 
-    <section class="about-preview">
+    <section class="split reverse">
 
-        <h2>Welcome to Green Thumb</h2>
+        <div class="split-text">
 
-        <p>
-            At Green Thumb, we believe every property deserves a healthy,
-            beautiful lawn. Our experienced team provides dependable lawn
-            maintenance, landscaping, and seasonal services that improve
-            curb appeal while giving homeowners more time to enjoy their
-            outdoor spaces.
-        </p>
+            <h2>Reliable Service</h2>
+
+            <p>
+
+                We believe reliability is just as important as
+                quality. That's why we arrive on schedule,
+                communicate clearly, and take pride in every
+                property we maintain.
+
+            </p>
+
+        </div>
+
+        <div class="split-image">
+
+            <img src="images/lawn.jpg"
+                alt="Riding mower cutting grass">
+
+        </div>
 
     </section>
 
-    <!-- CALL TO ACTION -->
+    <!-- BEAUTIFUL LAWNS -->
+
+    <section class="split">
+
+        <div class="split-text">
+
+            <h2>Creating Beautiful Lawns</h2>
+
+            <p>
+
+                From perfectly striped mowing patterns to edging,
+                fertilization, seasonal cleanups, and landscape
+                maintenance, Green Thumb helps your property
+                stand out all year long.
+
+            </p>
+
+        </div>
+
+        <div class="split-image">
+
+            <img src="images/heros.webp"
+                alt="Perfect green striped lawn">
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
 
     <section class="cta">
 
         <h2>Ready for a Better Lawn?</h2>
 
         <p>
-            Contact Green Thumb today for dependable lawn care and a
-            free, no-obligation estimate.
+
+            Let Green Thumb take the hard work off your hands.
+            Contact us today for dependable lawn care and a
+            free estimate.
+
         </p>
 
-        <a class="hero-button" href="contact.html">
-            Contact Us
+        <a href="contact.html" class="hero-button">
+
+            Contact Us Today
+
         </a>
 
     </section>
@@ -162,7 +220,7 @@
 
 <footer>
 
-    <p>&copy; 2026 Green Thumb. All Rights Reserved.</p>
+    <p>&copy; 2026 Green Thumb | Professional Lawn Care</p>
 
 </footer>
 

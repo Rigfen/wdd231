@@ -43,5 +43,52 @@
         padding: 2rem;
 
     }
+#menu{
+
+    display:none;
+
+}
+
+.navigation{
+
+    display:flex !important;
+
+    flex-direction:row;
+
+    justify-content:flex-end;
+
+    gap:1rem;
+
+}
+
+.split{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+.reverse .split-text{
+
+    order:2;
+
+}
+
+.reverse .split-image{
+
+    order:1;
+
+}
+
+.split-text{
+
+    text-align:left;
+
+}
 
 }
