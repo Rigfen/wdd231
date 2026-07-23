@@ -4,28 +4,29 @@
 
 :root {
 
-    --primary: #2E7D32;
-    --primary-dark: #1B5E20;
-    --secondary: #81C784;
-    --accent: #FFC107;
+    --primary: #3154b6;
+    --primary-dark: #14b114;
 
-    --background: #F5F9F3;
-    --surface: #FFFFFF;
+    --secondary: #2c3b4b;
 
-    --text: #2C3E2F;
-    --light-text: #6B7B6A;
+    --accent: #7CB342;
 
-    --border: #DDE8D8;
+    --background: #202322;
+    --surface: #2A2E2C;
+
+    --text: #F5F5F5;
+    --light-text: #C8C8C8;
+
+    --border: #3E4441;
 
     --radius: 14px;
 
-    --shadow: 0 8px 24px rgba(0,0,0,.10);
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
 
     --heading-font: "Poppins", sans-serif;
     --body-font: "Open Sans", sans-serif;
 
 }
-
 /* ========================================
    RESET
 ======================================== */
