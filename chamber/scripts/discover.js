@@ -1,10 +1,10 @@
-import { places } from "../data/discover.mjs";
+import { place } from "../scripts/discover.mjs";
 
 const discoverGrid = document.querySelector("#discover-grid");
 const visitMessage = document.querySelector("#visit-message");
 
 function displayPlaces() {
-    places.forEach((place, index) => {
+    place.forEach((place, index) => {
         const card = document.createElement("article");
         card.classList.add("discover-card", `place-${index + 1}`);
 

@@ -1,8 +1,8 @@
-export const places = [
+export const place = [
     {
         name: "Lincoln Cathedral",
         address: "Minster Yard, Lincoln, LN2 1PX",
-        image: "images/lincoln-cathedral.webp",
+        image: "images/cathedral.webp",
         alt: "Lincoln Cathedral viewed from the grounds",
         description: "A remarkable Gothic cathedral that has overlooked the city of Lincoln for centuries."
     },
