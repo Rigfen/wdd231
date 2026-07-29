@@ -1,4 +1,4 @@
-import { places } from "../data/places.mjs";
+import { places } from "../data/discover.mjs";
 
 const discoverGrid = document.querySelector("#discover-grid");
 const visitMessage = document.querySelector("#visit-message");
