@@ -90,11 +90,13 @@
 }
 
 .discover-card img {
-    width: 300px;
-    height: 200px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     object-position: center;
-    display: block;
     border-radius: .25rem;
 }
 
