@@ -1,4 +1,4 @@
-export const place = [
+export const places = [
     {
         name: "Lincoln Cathedral",
         address: "Minster Yard, Lincoln, LN2 1PX",
