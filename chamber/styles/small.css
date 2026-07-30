@@ -401,6 +401,11 @@ footer div {
     font-weight: bold;
 }
 
+#visit-message {
+    padding: 1rem;
+    min-height: 70px;
+}
+
 .membership-card button:hover {
     transform: scale(1.05);
 }
