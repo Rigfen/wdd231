@@ -432,6 +432,10 @@ dialog::backdrop {
     cursor: pointer;
 }
 
+#discover-grid {
+    min-height: 1900px;
+}
+
 @keyframes cardFade {
 
     from {
