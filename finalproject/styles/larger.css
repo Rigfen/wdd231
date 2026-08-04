@@ -92,3 +92,17 @@
 }
 
 }
+
+.hero {
+    height: 94%;
+    min-height: 0;
+}
+
+.hero img {
+    height: 50%;
+    min-height: 100%;
+}
+
+.hero-content {
+    min-height: 100%;
+}

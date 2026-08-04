@@ -75,20 +75,131 @@
 
 </header>
     <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>At Green Thumb, we are dedicated to promoting sustainable gardening practices and helping our community grow their own food.</p>
-        </section>
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Community Garden Workshop - June 15th</li>
-                <li>Plant Swap Event - July 10th</li>
-                <li>Organic Gardening Seminar - August 5th</li>
-            </ul>
-        </section>
 
-        </main>
+    <section class="contact-section">
+
+        <div class="contact-intro">
+            <h2>Book Your Lawn Care</h2>
+
+            <p>
+                Tell us when you are available and choose the lawn-care plan
+                that works best for you.
+            </p>
+        </div>
+
+        <form class="contact-form" action="#" method="get">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+    <div class="form-group">
+        <label for="date">Preferred Service Date</label>
+
+        <input
+            type="date"
+            id="date"
+            name="date"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label for="availability">Best Time Available</label>
+
+        <select id="availability" name="availability" required>
+            <option value="" selected disabled>Select a time</option>
+            <option value="morning">Morning — 8:00 AM to 12:00 PM</option>
+            <option value="afternoon">Afternoon — 12:00 PM to 4:00 PM</option>
+            <option value="evening">Evening — 4:00 PM to 7:00 PM</option>
+            <option value="anytime">Any time</option>
+        </select>
+    </div>
+
+</div>
+
+            <fieldset class="plan-fieldset">
+
+                <legend>Choose Your Lawn-Care Plan</legend>
+
+                <div class="plan-grid">
+
+                    <label class="plan-card">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="One-week lawn care"
+                            required>
+
+                        <span class="plan-name">One-Week Service</span>
+                        <span class="plan-price">£45</span>
+                        <span class="plan-details">
+                            One professional lawn-care visit.
+                        </span>
+                    </label>
+
+                    <label class="plan-card">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="Monthly subscription">
+
+                        <span class="plan-name">Monthly Subscription</span>
+                        <span class="plan-price">£120/month</span>
+                        <span class="plan-details">
+                            Regular care to keep your lawn looking great.
+                        </span>
+                    </label>
+
+                    <label class="plan-card">
+                        <input
+                            type="radio"
+                            name="service"
+                            value="Premium yearly subscription">
+
+                        <span class="plan-name">Premium Yearly Plan</span>
+                        <span class="plan-price">£1,200/year</span>
+                        <span class="plan-details">
+                            Full-year lawn care and priority scheduling.
+                        </span>
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <button class="submit-button" type="submit">
+                Request My Lawn-Care Plan
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
      <footer>
 
     <div>

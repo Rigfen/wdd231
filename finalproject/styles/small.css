@@ -247,46 +247,33 @@ section ul {
    HERO
 ======================================== */
 
-.hero{
-
+.hero {
     position: relative;
-
-    padding:0;
-
-    overflow:hidden;
-
+    min-height: 70vh;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
 }
 
-.hero img{
-
-    width:100%;
-
-    height:70vh;
-
-    object-fit:cover;
-
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.hero-content{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:2rem;
-
-    background:rgba(0,0,0,.45);
-
+.hero-content {
+    position: relative;
+    z-index: 1;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .hero-content h2{
@@ -437,4 +424,319 @@ footer {
 
     margin-top: 3rem;
 
+}
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+.contact-section {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+}
+
+.contact-intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-intro h2 {
+    color: var(--primary-dark);
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label,
+.plan-fieldset legend {
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    color: var(--secondary);
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.plan-fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.plan-fieldset legend {
+    margin-bottom: 1rem;
+}
+
+.plan-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.plan-card {
+    display: grid;
+    gap: 0.35rem;
+    padding: 1.25rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-card:hover,
+.plan-card:has(input:checked) {
+    border-color: var(--accent);
+    background: rgba(124, 179, 66, 0.2);
+    transform: translateY(-3px);
+}
+
+.plan-card input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+}
+
+.plan-name {
+    font-family: var(--heading-font);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.plan-price {
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.plan-details {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background: #2f855a;
+    border: none;
+    border-radius: var(--radius);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: #38a169;
+    transform: translateY(-3px);
+}
+
+@media screen and (min-width: 700px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========================================
+   SERVICES PAGE
+======================================== */
+
+main.services-page {
+    display: block;
+}
+
+.services-hero {
+    position: relative;
+    min-height: 55vh;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.services-hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-hero-content {
+    position: relative;
+    z-index: 1;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.services-hero-content h2 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.services-hero-content p {
+    max-width: 600px;
+    color: white;
+}
+
+.services-intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem;
+    color: white;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.featured-service {
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
+
+.popular-label {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.35rem 0.8rem;
+    color: #1d2b1c;
+    background: var(--accent);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.service-card h3 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.service-price {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.service-price span {
+    color: var(--light-text);
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.service-card ul {
+    display: grid;
+    gap: 0.65rem;
+    margin: 1.25rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-card li {
+    color: var(--light-text);
+}
+
+.service-card li::before {
+    content: "✓";
+    margin-right: 0.65rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.service-button {
+    display: block;
+    margin-top: auto;
+    padding: 0.85rem 1rem;
+    color: white;
+    text-align: center;
+    background: #2f855a;
+    border-radius: var(--radius);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.service-button:hover {
+    background: #38a169;
+    transform: translateY(-3px);
+}
+
+.services-cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.services-cta h2 {
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .services-hero,
+    .services-hero-content {
+        min-height: 65vh;
+    }
+
+    .services-hero-content h2 {
+        font-size: 3.25rem;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
