@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JavaScript -->
-    <script src="scripts/navigation.js" defer></script>
+<script type="module" src="scripts/sections.mjs"></script>
 
 </head>
 
@@ -42,17 +42,20 @@
             height="60">
 
         <div>
-
             <h1>Green Thumb</h1>
-
             <p>Professional Lawn Care</p>
-
         </div>
 
     </div>
 
-    <button id="menu" aria-label="Open Navigation"></button>
+    <!-- Hamburger menu button -->
+    <button
+        id="menu"
+        aria-label="Open Navigation"
+        aria-expanded="false">
+    </button>
 
+    <!-- This is what opens when the hamburger is clicked -->
     <nav>
 
         <ul class="navigation">
@@ -131,7 +134,7 @@
 
         <div class="split-image">
 
-            <img src="images/lawn.jpg"
+            <img src="images/lawn.webp"
                 alt="Beautiful landscaped yard">
 
         </div>
@@ -218,9 +221,37 @@
 
 </main>
 
-<footer>
+ <footer>
 
-    <p>&copy; 2026 Green Thumb | Professional Lawn Care</p>
+    <div>
+        <strong>Green Thumbs</strong><br>
+        Unit 6, Meridian Centre, Vulcan Way<br>
+        info@greenthumbs.com<br>
+        +44 01689 849799
+    </div>
+
+    <div>
+        &copy; <span id="currentyear"></span> Rigfen | WDD 231
+    </div>
+
+    <div>
+        Last Modified:<br>
+        <span id="lastModified"></span>
+    </div>
+
+    <div class="social">
+        <a href="https://facebook.com" target="_blank" rel="noopener">
+            <img src="images/facebook.svg" alt="Facebook icon" width="32" height="32">
+        </a>
+
+        <a href="https://github.com/rigfen" target="_blank" rel="noopener">
+            <img src="images/github.svg" alt="GitHub icon" width="32" height="32">
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="LinkedIn icon" width="32" height="32">
+        </a>
+    </div>
 
 </footer>
 
