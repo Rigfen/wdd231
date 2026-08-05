@@ -337,34 +337,72 @@ section ul {
 
 /* ========================================
    SPLIT SECTIONS
+   Makes each section look like the hero
 ======================================== */
 
-.split{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:2rem;
-
-    align-items:center;
-
+.split {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 420px;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
 }
 
-.split-text{
-
-    text-align:center;
-
+.split-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
-.split-image img{
+.split-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-    width:100%;
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+}
 
-    border-radius:var(--radius);
+.split-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
 
-    box-shadow:var(--shadow);
+.split-text h2 {
+    color: white;
+    font-size: 2rem;
+}
 
+.split-text p {
+    color: white;
+}
+
+@media screen and (min-width: 700px) {
+    .split {
+        min-height: 500px;
+    }
+
+    .split-text {
+        padding: 4rem;
+    }
+
+    .split-text h2 {
+        font-size: 2.6rem;
+    }
 }
 
 /* ========================================
