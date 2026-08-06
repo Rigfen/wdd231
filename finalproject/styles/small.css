@@ -415,7 +415,7 @@ footer {
 
     background: var(--primary-dark);
 
-    color: white;
+    color: rgb(255, 255, 255);
 
     text-align: center;
 
@@ -423,6 +423,16 @@ footer {
 
     margin-top: 3rem;
 
+}
+
+footer a {
+    color: var(--light-text);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: rgb(182, 12, 12);
 }
 
 /* ========================================
